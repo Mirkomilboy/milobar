@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Milobar</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- owl carousle -->
+    <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.default.min.css">
+
+    <script src="js/app.js" defer></script>
+</head>
+<body class="font-nunito bg-brand-pink text-brand-blue">
+    <header class="fixed z-30 top-0 left-0 w-full bg-brand-pink border-b border-brand-blue">
+        <div class="max-w-7xl mx-auto flex items-center justify-between font-bold px-4">
+            <div>
+                <a href="index.html">
+                    <img class="w-36 py-4" src="assets/logo.svg" alt="">
+                </a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-9">
+                <a class="border-b-2 border-brand-pink hover:border-brand-blue py-9" href="#">Home</a>
+                <a class="border-b-2 border-brand-pink hover:border-brand-blue py-9" href="#">Menu</a>
+                <a class="border-b-2 border-brand-pink hover:border-brand-blue py-9" href="#">Aktualności</a>
+                <a class="border-b-2 border-brand-pink hover:border-brand-blue py-9" href="#">Kontakt</a>
+            </div>
+
+            <div class="hidden md:block group relative">
+                <a class="relative z-10 text-white bg-brand-blue rounded-lg py-3 px-7" href="#">Zamów online</a>
+                <div class="absolute z-0 -bottom-4 left-2 w-36 h-10 bg-gray-900 rounded-lg group-hover:-translate-y-2 transition ease-in-out"></div>
+            </div>
+
+            <button class="menuBtn md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="mobileMenu transform -translate-x-full transition ease-in-out fixed z-50 top-0 left-0 bg-brand-pink border-r border-brand-blue h-screen w-3/4 px-8">
+            <div>
+                <a href="index.html">
+                    <img class="w-36 py-4" src="assets/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="space-y-3">
+                <a class="block border-b border-brand-pink hover:border-brand-blue" href="#">Home</a>
+                <a class="block border-b border-brand-pink hover:border-brand-blue" href="#">Menu</a>
+                <a class="block border-b border-brand-pink hover:border-brand-blue" href="#">Aktualności</a>
+                <a class="block border-b border-brand-pink hover:border-brand-blue" href="#">Kontakt</a>
+            </div>
+
+            <div class="group relative mt-14">
+                <a class="relative z-10 text-white bg-brand-blue rounded-lg py-3 px-7" href="#">Zamów online</a>
+                <div class="absolute z-0 -bottom-4 left-2 w-36 h-10 bg-gray-900 rounded-lg group-hover:-translate-y-2 transition ease-in-out"></div>
+            </div>
+
+            <button class="xBtn absolute top-4 right-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- overlay -->
+        <div class="overlay hidden fixed z-40 top-0 left-0 w-full h-full bg-gray-900/60"></div>
+    </header>
+
+    <main>
+        <!-- hero -->
+        <section class="relative h-screen pt-20">
+           <div class="max-w-3xl mx-auto flex flex-col items-center pt-36 px-4">
+                <p class="font-semibold text-xl text-center pb-1">Nowa restauracja</p>
+                <h1 class="font-black text-4xl lg:text-7xl text-center pb-4">Michała Milowicza</h1>
+                <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard <span class="font-black">dummy text ever since the 1500s</span>, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <div class="group relative mt-8">
+                    <a class="relative z-10 text-white font-bold bg-brand-blue rounded-lg py-3 px-8" href="#">Zobacz menu</a>
+                    <div class="absolute z-0 -bottom-4 left-2 w-36 h-10 bg-gray-900 rounded-lg group-hover:-translate-y-2 transition ease-in-out"></div>
+                </div>
+           </div>
+
+           <!-- absolute imgages -->
+           <img class="absolute bottom-10 left-4 md:left-10 w-28 sm:w-40 xl:w-64" src="assets/hero-chicken-1.png" alt="">
+           <img class="absolute top-24 lg:top-36 right-4 md:right-14 xl:right-28 transform rotate-180 w-28 sm:w-40 xl:w-64" src="assets/hero-chicken-1.png" alt="">
+           <img class="absolute top-24 lg:top-36 left-4 md:left-20 xl:left-52 w-20 sm:w-auto" src="assets/hero-chicken-2.png" alt="">
+           <img class="absolute bottom-24 right-4 md:right-40 lg:right-64 w-20 sm:w-auto" src="assets/hero-chicken-2.png" alt="">
+        </section>
+
+        <!-- quote -->
+        <section class="relative bg-white">
+            <div class="max-w-7xl mx-auto py-16 lg:pt-44 lg:pb-32 px-4">
+                <div class="max-w-xl md:pr-32 lg:pr-0">
+                    <svg class="flex-shrink-0 mb-9" width="37" height="30" viewBox="0 0 37 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.3942 16.5882C25.141 16.4118 23.3325 15.5882 21.9688 14.1176C20.5457 12.6471 19.8341 10.7941 19.8341 8.55882C19.8341 6.14706 20.6346 4.11765 22.2356 2.47059C23.7772 0.823527 25.734 -9.84907e-07 28.1058 -7.77558e-07C30.7147 -5.49475e-07 32.8494 0.941175 34.5096 2.82353C36.1699 4.70588 37 7.38235 37 10.8529C37 14.3824 36.3774 17.5882 35.1322 20.4706C33.887 23.4118 32.0192 26.1471 29.5288 28.6765C28.6987 29.5588 27.6907 30 26.5048 30C25.3189 30 24.2813 29.5882 23.3918 28.7647C22.5024 28 22.0577 27.1176 22.0577 26.1176C22.0577 25.1765 22.4135 24.3529 23.125 23.6471C25.2596 21.4118 26.6827 19.0588 27.3942 16.5882ZM7.5601 16.5882C5.30689 16.4118 3.4984 15.5882 2.13461 14.1176C0.711542 12.6471 1.67903e-06 10.7941 1.87445e-06 8.55882C2.08529e-06 6.14706 0.800482 4.11764 2.40144 2.47059C3.94311 0.823525 5.89984 -2.71886e-06 8.27164 -2.51151e-06C10.8806 -2.28343e-06 13.0152 0.941173 14.6755 2.82353C16.3357 4.70588 17.1659 7.38235 17.1659 10.8529C17.1659 14.3824 16.5433 17.5882 15.2981 20.4706C14.0529 23.4118 12.1851 26.1471 9.69471 28.6765C8.86458 29.5588 7.85657 30 6.67067 30C5.48478 30 4.44712 29.5882 3.55769 28.7647C2.66827 28 2.22356 27.1176 2.22356 26.1176C2.22356 25.1765 2.57933 24.3529 3.29087 23.6471C5.42548 21.4118 6.84856 19.0588 7.5601 16.5882Z" fill="#0D7CE4"/>
+                    </svg>
+                    <p class="font-bold text-2xl pb-11">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <p class="pb-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard <span class="font-black">dummy text ever since the 1500s</span>, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <img src="assets/signature.svg" alt="">
+                </div>
+            </div>
+            <img class="mx-auto relative md:absolute right-0 bottom-0 w-96 lg:w-[500px] xl:w-[610px]" src="assets/person.png" alt="">
+        </section>
+
+        <!-- Jesteś właścicielem restauracji? -->
+        <section class="max-w-7xl mx-auto py-20 lg:py-40 px-4">
+            <div class="flex flex-wrap pb-10 md:pb-20">
+                <div class="w-full sm:w-1/3 lg:w-1/2 pr-5">
+                    <h1 class="font-black text-3xl lg:text-5xl pb-4 lg:pb-14">Jesteś właścicielem restauracji?</h1>
+                    <div class="group relative my-8">
+                        <a class="relative z-10 text-white font-bold bg-brand-blue rounded-lg py-3 px-8" href="#">Dołącz do nas</a>
+                        <div class="absolute z-0 -bottom-4 left-2.5 w-36 h-10 bg-gray-900 rounded-lg group-hover:-translate-y-2 transition ease-in-out"></div>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/3 lg:w-1/4 pr-2">
+                    <img class="rounded-2xl object-cover" src="assets/chicken-1.png" alt="">
+                </div>
+                <div class="w-1/2 sm:w-1/3 lg:w-1/4 pl-2">
+                    <img class="rounded-2xl object-cover" src="assets/chicken-2.png" alt="">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 lg:gap-24">
+                <div class="space-y-6">
+                    <p class="bg-brand-blue text-white rounded-full inline-block py-2 px-2.5">01</p>
+                    <p>Zdobądź własną markę „restauracja tylko z dostawą” za ZERO opłaty!</p>
+                </div>
+                <div class="space-y-6">
+                    <p class="bg-brand-blue text-white rounded-full inline-block py-2 px-2.5">01</p>
+                    <p>Wykorzystaj modny model biznesowy w zakresie usług gastronomicznych</p>
+                </div>
+                <div class="space-y-6">
+                    <p class="bg-brand-blue text-white rounded-full inline-block py-2 px-2.5">01</p>
+                    <p>wykorzystaj istniejącą kuchnię swojej restauracji dzięki Rebel Tang</p>
+                </div>
+                <div class="space-y-6">
+                    <p class="bg-brand-blue text-white rounded-full inline-block py-2 px-2.5">01</p>
+                    <p>Zwiększ sprzedaż swojej restauracji dzięki gotowemu modelowi biznesowemu</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Palce lizać -->
+        <section class="max-w-7xl mx-auto px-4">
+            <div class="relative overflow-hidden bg-brand-blue rounded-3xl text-white py-20 lg:py-40 pl-12 lg:pl-24">
+                <div class="max-w-2xl relative z-20">
+                    <p class="font-semibold pb-2">Dania znane i lubiane!</p>
+                    <h1 class="font-black text-5xl lg:text-8xl pb-2">Palce lizać</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard <span class="font-black">dummy text ever since the 1500s</span>, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <div class="group relative mt-8">
+                        <a class="relative z-10 text-brand-blue font-bold bg-white rounded-lg py-3 px-8" href="#">Zobacz menu</a>
+                        <div class="absolute z-0 -bottom-4 left-2.5 w-36 h-10 bg-gray-900 rounded-lg group-hover:-translate-y-2 transition ease-in-out"></div>
+                    </div>
+                </div>
+
+                <img class="absolute z-0 top-0 right-0" src="assets/chicken-hand.png" alt="">
+            </div>
+        </section>
+
+        <!-- slider -->
+        <section class="relative max-w-7xl mx-auto py-20 lg:py-36 px-4">
+            <h1 class=" relative z-0 font-black text-3xl md:text-5xl pb-16">Artykuły prasowe</h1>
+            <div class="carousel">
+                <div class="owl-one owl-carousel owl-theme space-x-12">
+                    <div class="pr-4">
+                        <img src="assets/slider-1.png" alt="">
+                        <p>01.12.2021</p>
+                        <p class="font-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p>onet.pl</p>
+                    </div>
+                    <div class="pr-4">
+                        <img src="assets/slider-2.png" alt="">
+                        <p>01.12.2021</p>
+                        <p class="font-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p>onet.pl</p>
+                    </div>
+                    <div class="pr-4">
+                        <img src="assets/slider-3.png" alt="">
+                        <p>01.12.2021</p>
+                        <p class="font-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p>onet.pl</p>
+                    </div>
+                    <div class="pr-4">
+                        <img src="assets/slider-4.png" alt="">
+                        <p>01.12.2021</p>
+                        <p class="font-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p>onet.pl</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sprawdź co o nas myślą: -->
+        <section class="relative mb-20 lg:mb-52">
+            <div class="max-w-7xl mx-auto md:flex items-center justify-between md:space-x-10 lg:space-x-20 px-4">
+                <div class="bg-brand-blue md:w-1/2 h-[460px] rounded-2xl xl:mr-20"></div>
+                <div class="w-full md:w-1/2 xl:pr-20 pt-16 md:pt-0">
+                    <h1 class="font-black text-3xl sm:text-5xl pb-6 sm:pb-16">Sprawdź co o nas myślą:</h1>
+                    <div class="flex items-center space-x-2 pb-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                    <p class="pb-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard <span class="font-black">dummy text ever since the 1500s</span>, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p class="font-black">Janek z Warszawy</p>
+                </div>
+            </div>
+            <img class="absolute top-0 left-0 md:w-96 lg:w-[450px] xl:w-[600px]" src="assets/wrap.png" alt="">
+        </section>
+
+        <!--  -->
+        <section class="mb-14 lg:mb-28 px-4">
+            <div style="background-image: url(assets/bg.png);" class="relative bg-center bg-cover bg-no-repeat max-w-7xl mx-auto rounded-2xl overflow-hidden px-4">
+                <div class="relative z-20 max-w-5xl mx-auto flex flex-col items-center py-44 lg:py-52 px-4">
+                    <h1 class="font-black text-white text-5xl lg:text-8xl text-center">Jesteś właścicielem restauracji?</h1>
+                    <div class="group relative mt-8">
+                        <a class="relative z-10 text-white font-bold bg-brand-blue rounded-lg py-3 px-8" href="#">Dołącz do nas</a>
+                        <div class="absolute z-0 -bottom-4 left-2 w-36 h-10 bg-gray-900 rounded-lg group-hover:-translate-y-2 transition ease-in-out"></div>
+                    </div>
+                </div>
+                <div class="absolute z-0 top-0 left-0 w-full h-full bg-gray-900/30"></div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="flex justify-center pb-8 lg:pb-16">
+                <a href="#">
+                    <img class="w-40 sm:w-48" src="assets/rebel-tang.png" alt="">
+                </a>
+            </div>
+            <div class="flex items-center justify-center space-x-7 pb-10 lg:pb-20">
+                <a class="transform hover:-translate-y-1 transition ease-in-out" href="#">
+                    <img src="assets/instagram.svg" alt="">
+                </a>
+                <a class="transform hover:-translate-y-1 transition ease-in-out" href="#">
+                    <img src="assets/facebook.svg" alt="">
+                </a>
+                <a class="transform hover:-translate-y-1 transition ease-in-out" href="#">
+                    <img src="assets/linkedin.svg" alt="">
+                </a>
+            </div>
+
+            <div class="bg-white">
+                <div class="max-w-7xl mx-auto flex items-center justify-between text-black text-xs sm:text-sm py-4 px-4">
+                    <p>@ 2021 Rebel Tang</p>
+                    <div class="flex items-center space-x-4 sm:space-x-7">
+                        <a class="hover:underline" href="#">Polityka Prywatności</a>
+                        <a class="hover:underline" href="#">Regulamin</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <script src="vendor/owl-carousel/jquery.min.js"></script>
+    <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+</body>
+</html>
